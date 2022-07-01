@@ -19,8 +19,8 @@ class Calculator(App):
     reset_numbers = False
     clear_data = False
 
-    sound = SoundLoader.load('./sound.wav')
-    sound_clear = SoundLoader.load('./Empty-trash-sound-effect.wav')
+    sound = SoundLoader.load('./sounds/sound.wav')
+    sound_clear = SoundLoader.load('./sounds/Empty-trash-sound-effect.wav')
 
     operations = list()
     
