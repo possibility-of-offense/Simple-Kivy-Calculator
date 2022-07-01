@@ -154,7 +154,7 @@ class Calculator(App):
                     get_symbol = self.symbols[0]
                     self.calc_operation(get_symbol, {"to_set": True, "symb": inst.text}, setting_prev = True)
 
-    # Show something is = is clicked but there is nothing
+    # Show something if "=" sign is clicked
     def handle_equal_event(self, inst, msg = 'Add numers'):
         '''
             Handler for pressing the '=' Button widget
@@ -170,6 +170,10 @@ class Calculator(App):
             self.sound.play()
 
     # Fill the operations list
+    '''
+        Fill the operations list() 
+        and adjust the text to show no more than 10 operations
+    '''
     def fill_operations_list(self, oper):
         self.operations.append(oper)
         if len(self.operations) > 10:
